@@ -1,0 +1,45 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OyhoHq-_Xms?si=pcsYev4soFLpMDJP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<form name="feedback" action="">
+
+    First Name: <input type="firstname" name="fname" placeholder="Anonymous" required>
+    Last Name: <input type="lastname" name="lname" placeholder="Anonymous" required>
+    Email: <input type="email" name="mail" placeholder="name@domain.com" required>
+
+    <p>Are you going to recommend this website?</p>
+    <p><input type="radio" name="yesoption" value="yes"> Yes</p>
+	<p><input type="radio" name="nooption" value="no"> No</p>
+
+    <p>
+        Please select your favorite websites:
+        <select name="favoritewebsite" size="2" multiple>
+            <option value="google">Google</option>
+            <option value="facebook">Facebook</option>
+            <option value="youtube">Youtube</option>
+            <option value="twitter">Twitter</option>
+            <option value="blackboard">Blackboard</option>
+
+        </select>
+    </p>
+
+    <p>Rate the website:</p>
+
+    <div>
+      <input type="range" id="rate" name="rating" min="1" max="10">
+      <label for="rate">Rating</label>
+    </div>
+
+    <p> Any additional comments?:</p>
+                <textarea name="comment" rows="10" cols="50"> Enter any comments here</textarea>
+
+                
+    <input type="submit" value="Submit">
+
+    <p>Three other HTML5 Features:</p>
+    <input type="color" name="frontcolor">
+	<input type="date" name="date">
+	<input type="datetime" name="datetime">
+	
+
+                
+</form>
