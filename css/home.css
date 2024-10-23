@@ -14,7 +14,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 98%;
     background-color: #ff5100;
     color: rgb(0, 0, 0);
     padding: 15px;
@@ -74,8 +74,26 @@ body {
     border: 1px solid #000000;
 }
 
-/* Portfolio, address, schedule */
-.portfolio, .address, .schedule {
+/* Portfolio, address, schedule borders */
+.portfolio{
+    margin: 40px 20px;
+    padding: 20px;
+    background-color: #f78c00e3;
+    border: 1px solid #000000;
+    border-right: 3px solid #000000;
+    border-bottom: 3px solid #000000;
+}
+
+.address{
+    margin: 40px 20px;
+    padding: 20px;
+    background-color: #f78c00e3;
+    border: 1px solid #000000;
+    border-right: 3px solid #000000;
+    border-bottom: 3px solid #000000;
+}
+
+.schedule{
     margin: 40px 20px;
     padding: 20px;
     background-color: #f78c00e3;
@@ -91,7 +109,7 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* copyright/footer */
+/* copyright */
 .copyright {
     position: float;
     bottom: 0;
