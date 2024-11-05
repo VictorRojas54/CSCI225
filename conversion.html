@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<body>
+        
+		<h1>Unit Conversion Calculator - Length</h1>
+
+		<form>
+			<!-- Input One -->
+			<input type="text" id="input1" placeholder="Enter value">
+
+			<select id="unit1">
+				<option value="Foot">foot</option>
+				<option value="Meter">meter</option>
+				<option value="Inch">inch</option>
+			</select>
+			=
+
+			<!-- Input Two -->
+			<input type="text" id="input2" placeholder="Result">
+
+			<select id="unit2">
+				<option value="Foot">foot</option>
+				<option value="Meter">meter</option>
+				<option value="Inch">inch</option>
+			</select>
+
+			<!-- Convert Button -->
+			<button type="button" onClick="unit()" id="ConvertButton">convert</button>
+		</form>
+
+
+        
+		<!-- Javascript for calculator -->
+		<script>
+			function unit() {
+				let input1 = document.getElementById("input1").value;
+				let unit1 = document.getElementById("unit1").value;
+				let unit2 = document.getElementById("unit2").value;
+
+				input1 = parseFloat(input1);
+
+				if(unit1 == "Foot") {
+					if(unit2 == "Foot") {
+						document.getElementById('input2').value = input1;
+					} else if(unit2 == "Meter") {
+						document.getElementById('input2').value = (input1 / 3.2808).toFixed(4);
+					} else {
+						document.getElementById('input2').value = (input1 * 12).toFixed(4);
+					}
+
+				} else if(unit1 == "Meter") {
+					if(unit2 == "Foot") {
+						document.getElementById('input2').value = (input1 * 3.2808).toFixed(4);
+					} else if(unit2 == "Meter") {
+						document.getElementById('input2').value = input1;
+					} else {
+						document.getElementById('input2').value = (input1 * 39.3700).toFixed(4);
+					}
+
+				} else {
+					if(unit2 == "Foot") {
+						document.getElementById('input2').value = (input1 * 0.08333).toFixed(4);
+					} else if(unit2 == "Meter") {
+						document.getElementById('input2').value = (input1 * 0.0254).toFixed(4);
+					} else {
+						document.getElementById('input2').value = input1;
+					}
+				}
+			}
+		</script>
+
+	</body>
+</html>
